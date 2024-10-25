@@ -1,9 +1,9 @@
 from fastapi import APIRouter, HTTPException
 from typing import List
-from ..models.animal import Animal
-from ..models.mamifero import Mamifero
-from ..models.ave import Ave
-from ..services.animal_service import AnimalService
+from models.animal import Animal
+from models.mamifero import Mamifero
+from models.ave import Ave
+from services.animal_service import AnimalService
 
 router = APIRouter()
 animal_service = AnimalService()
