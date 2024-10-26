@@ -1,6 +1,6 @@
 from fastapi import FastAPI
-from .controllers import animal_controller
+from app.controllers.animal_controller import router as animalRouter
 
 app = FastAPI()
 
-app.include_router(animal_controller.router)
+app.include_router(animalRouter)
